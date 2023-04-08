@@ -1,0 +1,127 @@
+{
+  "title": "Harry Potter Digital Sorting Hat",
+  "outcomes": {
+    "outcome1": {
+      "img": "https://media0.giphy.com/media/Tl2AK8HOHj7SU/giphy.gif",
+      "text": "Gryffindor"
+    },
+    "outcome2": {
+      "img": "https://media.tenor.com/azjDUSuOB3AAAAAC/sorting-hat-slytherin.gif",
+      "text": "Slytherin"
+    },
+    "outcome3": {
+      "img": "https://media.tenor.com/uxepkCL8gMMAAAAC/taemin-harry-potter.gif",
+      "text": "Hufflepuff"
+    },
+    "outcome4": {
+      "img": "https://3beautifulbamfs.files.wordpress.com/2011/10/tumblr_lqnry5s9cd1qgr60so1_500.gif",
+      "text": "Ravenclaw"
+    }
+  },
+  "questions": [
+    {
+      "question_name": "What is your favorite color?",
+      "question_type": "favorite_color",
+      "choices": [
+        {
+          "text": "",
+          "img_url": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwYHBgYIBwgKBgkGCAoPBgYFBg8ICRAKFBEWFhQRExMYHCggGBolGxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKBgcGDg8PGisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAVAAEBAAAAAAAAAAAAAAAAAAAAB//EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAWAQEBAQAAAAAAAAAAAAAAAAAABgT/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCaAMCvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//Z",
+          "outcome": "outcome1"
+        },
+        {
+          "text": "",
+          "img_url": "https://www.colorbook.io/imagecreator.php?hex=1A472A&width=1920&height=1080&text=%201920x1080",
+          "outcome": "outcome2"
+        },
+        {
+          "text": "",
+          "img_url": "https://garden.spoonflower.com/c/13569726/p/f/m/KhC1lVfHQtgcFVPqu_l9bcmAzADCe77C9rlhvrjL-sZPke8perypLDI/FFA928%20Golden%20Yellow.jpg",
+          "outcome": "outcome3"
+        },
+        {
+          "text": "",
+          "img_url": "https://www.icolorpalette.com/download/solidcolorimage/041355_solid_color_background_icolorpalette.png",
+          "outcome": "outcome4"
+        }
+      ]
+    },
+    {
+      "question_name": "What is your favorite pastime?",
+      "question_type": "favorite_pastime",
+      "choices": [
+        {
+          "text": "",
+          "img_url": "https://production-media.paperswithcode.com/tasks/Screenshot_2019-11-25_at_14.47.09_F90ZoTc.jpg",
+          "outcome": "outcome1"
+        },
+        {
+          "text": "",
+          "img_url": "https://i.pinimg.com/736x/b6/a8/e6/b6a8e6cfb872e565f60ef23ae787041b.jpg",
+          "outcome": "outcome4"
+        },
+        {
+          "text": "",
+          "img_url": "https://cdn.who.int/media/images/default-source/initiatives/uhc-advice/who-cards-07-health-info-02.tmb-1200v.jpg?sfvrsn=ac5931df_4",
+          "outcome": "outcome3"
+        },
+        {
+          "text": "",
+          "img_url": "https://cdn.shopify.com/s/files/1/2398/2457/t/19/assets/wc-august-2022-800px06332-1659330826339_1200x.jpg?v=1659330829",
+          "outcome": "outcome2"
+        }
+      ]
+    },
+    {
+      "question_name": "How would you describe yourself?",
+      "question_type": "descriptor",
+      "choices": [
+        {
+          "text": "Ambitious",
+          "img_url": "",
+          "outcome": "outcome2"
+        },
+        {
+          "text": "Studious",
+          "img_url": "",
+          "outcome": "outcome4"
+        },
+        {
+          "text": "Brave",
+          "img_url": "",
+          "outcome": "outcome1"
+        },
+        {
+          "text": "Caring",
+          "img_url": "",
+          "outcome": "outcome3"
+        }
+      ]
+    },
+    {
+      "question_name": "Which element resonates with you the most?",
+      "question_type": "favorite_element",
+      "choices": [
+        {
+          "text": "",
+          "img_url": "https://mymodernmet.com/wp/wp-content/uploads/2021/08/how-to-draw-fire-1.jpg",
+          "outcome": "outcome1"
+        },
+        {
+          "text": "",
+          "img_url": "https://i.guim.co.uk/img/media/8edc98c00ef1f77ebd73c6987ba10c13e222769c/0_203_4288_2573/master/4288.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=8a9146a4f607a54b289133a94903af0f",
+          "outcome": "outcome2"
+        },
+        {
+          "text": "",
+          "img_url": "https://thequirkymedium.com/images/intro-images-pixabay/air_1920.jpg",
+          "outcome": "outcome4"
+        },
+        {
+          "text": "",
+          "img_url": "https://c1.wallpaperflare.com/preview/71/649/176/seamless-tileable-texture-ground.jpg",
+          "outcome": "outcome3"
+        }
+      ]
+    }
+  ]
+}
