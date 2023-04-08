@@ -23,6 +23,7 @@
     {
       "question_name": "What is your favorite color?",
       "question_type": "favorite_color",
+      "weight": 1.0,
       "choices": [
         {
           "text": "",
@@ -49,6 +50,7 @@
     {
       "question_name": "What is your favorite pastime?",
       "question_type": "favorite_pastime",
+      "weight": 0.8,
       "choices": [
         {
           "text": "",
@@ -75,6 +77,7 @@
     {
       "question_name": "How would you describe yourself?",
       "question_type": "descriptor",
+      "weight": 0.9,
       "choices": [
         {
           "text": "Ambitious",
@@ -101,6 +104,7 @@
     {
       "question_name": "Which element resonates with you the most?",
       "question_type": "favorite_element",
+      "weight": 0.4,
       "choices": [
         {
           "text": "",

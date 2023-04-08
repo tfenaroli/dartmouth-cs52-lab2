@@ -1,11 +1,13 @@
 console.log("JS is working!");
 
 let numQuestions;
+let questionWeights;
 let outcomeToAssets;
 
 $.getJSON("data.json", function (data) {
-  // set numQuestions and outcomeToAssets vars
+  // set numQuestions, questionWeights, and outcomeToAssets vars
   numQuestions = data.questions.length;
+  questionWeights = data.questions.map((q) => q.weight);
   outcomeToAssets = data.outcomes;
 
   // populate header content
@@ -65,15 +67,17 @@ $("#submit").on("click", function (e) {
   else {
     // create a dictionary mapping from outcome to frequency
     const houseToFreq = {};
-    choices.forEach((el) => {
+    choices.forEach((el, index) => {
       if (houseToFreq[el]) {
-        houseToFreq[el] = houseToFreq[el] + 1;
+        houseToFreq[el] = houseToFreq[el] + questionWeights[index];
       } else {
-        houseToFreq[el] = 1;
+        houseToFreq[el] = questionWeights[index];
       }
     });
 
-    // get the most frequent house
+    console.log("outcome to weight: " + JSON.stringify(houseToFreq));
+
+    // get the most frequent outcome
     let mostFreq = Object.keys(houseToFreq)[0];
     Object.keys(houseToFreq).forEach((el) => {
       if (houseToFreq[el] > houseToFreq[mostFreq]) {
