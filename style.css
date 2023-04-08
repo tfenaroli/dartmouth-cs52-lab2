@@ -60,7 +60,8 @@ label > img {
 }
 
 label > input:not(:checked) + *:hover {
-  animation: shake 0.2s;
+  animation: shake 0.3s;
+  cursor: pointer;
 }
 
 label > input:checked + * {
@@ -114,13 +115,13 @@ label > input:checked + * {
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(3deg);
+    transform: rotate(6deg);
   }
   50% {
     transform: rotate(0deg);
   }
   75% {
-    transform: rotate(-3deg);
+    transform: rotate(-6deg);
   }
   100% {
     transform: rotate(0deg);
