@@ -4,13 +4,15 @@ let numQuestions;
 let outcomeToAssets;
 
 $.getJSON("data.json", function (data) {
-  // now you can do something with this data.
-  // remember you can only work with the data in this callback
-  // data.title has the title
-  // maybe you want to loop through data.questions?
+  // set numQuestions and outcomeToAssets vars
   numQuestions = data.questions.length;
   outcomeToAssets = data.outcomes;
+
+  // populate header content
+  $("#main_img").attr("src", data.main_img);
   $("#header h1").text(data.title);
+
+  // generate questions html
   var html = "";
   data.questions.forEach((q) => {
     console.log(q);
@@ -54,17 +56,14 @@ $("#submit").on("click", function (e) {
     })
     .toArray();
 
-  // now you have an array of choices = ["valueofradiobox1", "valueofradiobox2", "valueofradiobox2"]
-  // you'll need to do some calculations with this
-  // a naive approach would be to just choose the most common option - seems reasonable
-
-  // if user hasn't answered all questions
+  // if user hasn't answered all questions, alert
   if (choices.length < numQuestions) {
     alert("Must answer all questions!");
   }
+
   // is user has answered all questions
   else {
-    // create a dictionary mapping from house to frequency
+    // create a dictionary mapping from outcome to frequency
     const houseToFreq = {};
     choices.forEach((el) => {
       if (houseToFreq[el]) {
@@ -82,8 +81,7 @@ $("#submit").on("click", function (e) {
       }
     });
 
-    console.log(houseToFreq);
-    console.log(mostFreq);
+    // hide submit button, set modal content, and show modal
     $("#submit").hide();
     $("#result").text(
       "You are a " + outcomeToAssets[mostFreq].text.toUpperCase() + "!!!"
@@ -94,11 +92,14 @@ $("#submit").on("click", function (e) {
 });
 
 $("#questions").on("click", "input[type='radio']", function (e) {
+  // get question that was answered
   const question = $(this).attr("name");
-  // checked img
+
+  // remove inactive class from choice that was clicked, if it has inactive class
   if ($(`input[name="${question}"]:checked ~ *`).hasClass("inactive")) {
     $(`input[name="${question}"]:checked ~ *`).removeClass("inactive");
   }
-  // unchecked imgs
+
+  // add inactive class to all choices for that question that were not clicked
   $(`input[name="${question}"]:not(:checked) ~ *`).addClass("inactive");
 });

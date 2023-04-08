@@ -27,7 +27,7 @@ h1 {
   transform: translate(-50%, 0%);
 }
 
-#hogwarts {
+#main_img {
   height: 250px;
   width: 100%;
   object-fit: cover;
@@ -39,12 +39,13 @@ h1 {
 
 .question {
   margin-top: 60px;
-  border-style: solid;
 }
 
 .choices_wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 h3 {
@@ -60,22 +61,43 @@ label > img {
 
 label > input:not(:checked) + *:hover {
   box-shadow: 6px 6px;
+  animation: shake 0.2s;
 }
 
 label > input:checked + * {
-  /* border-style: solid;
-  border-width: 3px; */
+  border-style: solid;
+  border-width: 4px;
+  animation: click 0.3s;
+}
+
+#submit {
+  width: 120px;
+  height: 40px;
+  background-color: salmon;
+  border-radius: 14px;
+  color: white;
+  border-style: none;
+  margin: 36px;
+}
+
+#submit:hover {
+  cursor: pointer;
 }
 
 #modal {
-  border-style: solid;
-  border-color: red;
   background-color: white;
   display: none;
+  border-style: solid;
+  text-align: center;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#modal > img {
+  width: 400px;
+  height: 200px;
 }
 
 .inactive {
@@ -84,4 +106,34 @@ label > input:checked + * {
 
 #result {
   font-size: x-large;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
