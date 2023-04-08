@@ -60,7 +60,6 @@ label > img {
 }
 
 label > input:not(:checked) + *:hover {
-  box-shadow: 6px 6px;
   animation: shake 0.2s;
 }
 
@@ -107,6 +106,8 @@ label > input:checked + * {
 #result {
   font-size: x-large;
 }
+
+/* took inspiration from W3Schools for these animations */
 
 @keyframes shake {
   0% {
